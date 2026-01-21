@@ -14,7 +14,7 @@ function sendMessage() {
         "<p><b>You:</b> " + input + "</p>";
     chatBox.scrollTop = chatBox.scrollHeight;
 
-    fetch("https://<username>-llm-chatbot-backend.hf.space/chat", {
+    fetch("https://Anant140705-llm-chatbot-backend.hf.space/chat", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
