@@ -1,0 +1,276 @@
+*{
+  cursor: url('pointer.png'),auto;
+}
+
+body{
+    /* background-color: #F5F2F2; */
+    margin:0;
+    padding:0;
+    background-image: url("background.jpeg");
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed;
+}
+header {
+    background-color: #F5F2F2;
+    opacity: 0.8;
+}
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 8px 30px;
+    color: black;
+}
+.logo{
+    /* font-weight: bold; */
+    font-size: 30px;
+    color: #2B2A2A;
+    font-family: fantasy;
+    
+}
+.logo:hover{
+    color: #5A7ACD;
+    transition: 0.3s;
+    scale: 1.05;
+}
+.user{
+    font-size: 20px;
+    color: #2B2A2A;
+    font-family: Arial, sans-serif;
+}
+.logo-img{
+    height:62px;
+}
+.big_text {
+    text-align: center;
+    font-size: 100px;
+    /* font-weight: bold; */
+    font-family: fantasy;
+    color: #2B2A2A;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    /* text-shadow: 0 0 5px #5A7ACD; */
+}
+
+/* .input{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.user-input{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #FEB05D;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.send-button{
+    padding: 10px 20px;
+    background-color: #5A7ACD;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+} */
+ /* From Uiverse.io by 0xnihilism */ 
+.input__container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  border: 4px solid #000;
+  max-width: 45%;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  box-shadow: 10px 10px 0 #000;
+}
+
+.input__container:hover {
+  transform: rotateX(5deg) rotateY(1 deg) scale(1.05);
+  box-shadow: 25px 25px 0 -5px #FEB05D, 25px 25px 0 0 #000;
+}
+
+.shadow__input {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translateZ(-50px);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 107, 0.4) 0%,
+    rgba(255, 107, 107, 0.1) 100%
+  );
+  filter: blur(20px);
+}
+
+.input__button__shadow {
+  cursor: pointer;
+  border: 3px solid #000;
+  background: #FEB05D;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transform: translateZ(20px);
+  position: relative;
+  z-index: 3;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.input__button__shadow:hover {
+  background: #FEB09D;
+  transform: translateZ(10px) translateX(-5px) translateY(-5px);
+  box-shadow: 5px 5px 0 0 #000;
+}
+
+.input__button__shadow svg {
+  fill: #000;
+  width: 25px;
+  height: 25px;
+}
+
+.input__search {
+  width: 100%;
+  outline: none;
+  border: 3px solid #000;
+  padding: 15px;
+  font-size: 18px;
+  background: #fff;
+  color: #000;
+  transform: translateZ(10px);
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+  z-index: 3;
+  font-family: "Roboto", Arial, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.input__search::placeholder {
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.input__search:hover,
+.input__search:focus {
+  background: #f0f0f0;
+  transform: translateZ(20px) translateX(-3px) translateY(-5px);
+  box-shadow: 5px 5px 0 0 #5A7ACD;
+  cursor: url('pointer.png'), auto;
+}
+
+.input__container::before {
+  content: "Let's Talk !!";
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  background: #FEB05D;
+  color: #000;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 14px;
+  transform: translateZ(50px);
+  z-index: 4;
+  border: 2px solid #000;
+}
+.send-button{
+  height:46px;
+}
+.send{
+  border: 3px solid #000;
+}
+.send:hover{
+  scale: 1.05;
+  transition: 0.3s;
+  transform: translateZ(20px) translateX(-3px) translateY(-3px);
+  box-shadow: 5px 5px 0 0 #5A7ACD;
+}
+.clear-button{
+  height:46px;
+}
+.delete{
+  border: 3px solid #000;
+}
+.delete:hover{
+  scale: 1.05;
+  transition: 0.3s;
+  transform: translateZ(20px) translateX(-3px) translateY(-3px);
+  box-shadow: 5px 5px 0 0 #5a7acd;
+}
+/* ===== Chat Active State ===== */
+body.chat-active .big_text {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+
+/* ===== Input shrink on chat active ===== */
+body.chat-active .input__container {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(0.85);
+  max-width: 55%;
+  padding: 12px;
+}
+
+/* Shrink input field */
+body.chat-active .input__search {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Shrink buttons */
+body.chat-active .send-button,
+body.chat-active .clear-button {
+  height: 36px;
+}
+
+/* Reduce label size */
+body.chat-active .input__container::before {
+  font-size: 11px;
+  padding: 3px 8px;
+}
+
+
+#chatBox {
+  display: none;
+  margin: 40px auto;
+  width: 70%;
+  max-height: 55vh;
+  overflow-y: auto;
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+}
+
+body.chat-active #chatBox {
+  display: block;
+}
+/* Smooth reset */
+.big_text,
+.input__container,
+#chatBox {
+  transition: all 0.5s ease;
+  scroll-behavior: smooth;
+}
+

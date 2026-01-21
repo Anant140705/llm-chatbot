@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="title.png">
+    <title>Let's talk !!</title>
+</head>
+<body>
+    <header>
+    <nav class="top-nav">
+        <img src="logo2.png" alt="Logo" class="logo-img">
+        <div class="logo">Let's Talk !!</div>
+        <!-- <div class="user">User</div> -->
+    </nav>
+</header>
+<div class="big_text">HAPPY TO HELP</div>
+<!-- <div class="input">
+    <input type="text" placeholder="Share your thoughts here..." class="user-input">
+    <button class="send-button">Send</button>
+</div> -->
+<div class="input__container">  
+  <div class="shadow__input"></div>
+  <input
+    id="userInput"
+    type="text"
+    name="username"
+    class="input__search"
+    placeholder="Share your thoughts here..."
+    onkeydown="if(event.key==='Enter') sendMessage()"
+  />
+  <button type="button"  class="send" onclick="sendMessage()">
+  <img src="send.png" class="send-button" alt="send button" >
+  </button>
+  <button type="button"  class="delete" onclick="clearChat()">
+  <img src="delete.png" class="clear-button" alt="clearchat button" >
+  </button>
+</div>
+<div id="chatBox"></div>
+<script src="script.js"></script> 
+</body>
+</html> 
