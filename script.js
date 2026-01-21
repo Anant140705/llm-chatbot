@@ -14,7 +14,7 @@ function sendMessage() {
         "<p><b>You:</b> " + input + "</p>";
     chatBox.scrollTop = chatBox.scrollHeight;
 
-    fetch("http://localhost:5000/chat", {
+    fetch("https://your-backend-url.onrender.com/chat", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
