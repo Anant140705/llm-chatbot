@@ -20,6 +20,10 @@ class ChatRequest(BaseModel):
 def chat(req: ChatRequest):
     reply = generate_reply(req.message)
     return {"reply": reply}
+
+@app.get("/")
+def root():
+    return {"status": "Backend is running on Hugging Face Spaces"}
 # @app.post("/reset")
 # def reset():
 #     from model import chat_history_ids
