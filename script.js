@@ -14,7 +14,7 @@ function sendMessage() {
         "<p><b>You:</b> " + input + "</p>";
     chatBox.scrollTop = chatBox.scrollHeight;
 
-    fetch("https://your-backend-url.onrender.com/chat", {
+    fetch("https://llm-chatbot-hz5e.onrender.com/chat", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
